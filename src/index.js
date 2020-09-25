@@ -1,1 +1,3 @@
-import './styles.css';
+import "./js/gallery";
+import "./styles.scss";
+import "./js/localstorage";
