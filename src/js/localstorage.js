@@ -13,7 +13,9 @@ if (checkTheme == null) {
   localStorage.setItem("Theme", JSON.stringify(Theme.LIGHT));
 } else {
   bodyRef.classList = checkTheme;
-
+  if (checkTheme == Theme.DARK) {
+    switchToggle.checked = true;
+  }
 }
 
 function getTheme() {
@@ -25,7 +27,6 @@ function getTheme() {
     return parsedTheme;
   }
 }
-
 
 switchToggle.addEventListener("change", onSwitchToggle);
 
